@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block style %}
+    <style>
+        img {
+            margin: 5px;
+            width: 80px;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <h3>ไฟลกับรูปภาพ</h3>
+    <img src="{% static 'image/python.png' %}">
+    <img src="{% static 'image/django.png' %}">
+    <img src="{% static 'image/vscode.png' %}">
+    <hr>
+{% endblock %}
